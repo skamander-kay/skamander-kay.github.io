@@ -1,17 +1,25 @@
 <html>
-  <header>
+  <head>
     <title>Bitch</title>
-  </header>
+  </head>
+
   <body>
-    <h1 style="color:pink">hello, bitch!</h1>
+
+    <h1 id="texto" style="color:pink; display:none;">hello, bitch!</h1>
+
     <button id="botao">Click</button>
+
   </body>
 
   <script>
-    let botao = document.getElementById("botao")
 
-    botao.addEventListener("click", function() {
-      console.log("oi")
+    let botao = document.getElementById("botao")
+    let texto = document.getElementById("texto")
+
+    botao.addEventListener("click", () => {
+      texto.style.display = "block"
     })
+
   </script>
+
 </html>

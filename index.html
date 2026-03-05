@@ -1,25 +1,26 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Bitch</title>
-  </head>
 
-  <body>
+<head>
+  <title>Test</title>
+</head>
 
-    <h1 id="texto" style="color:pink; display:none;">hello, bitch!</h1>
+<body>
 
-    <button id="botao">Click</button>
+<h1 id="texto" style="color:pink; display:none;">hello, bitch!</h1>
 
-  </body>
+<button id="botao">Click</button>
 
-  <script>
+<script>
 
-    let botao = document.getElementById("botao")
-    let texto = document.getElementById("texto")
+let botao = document.getElementById("botao");
+let texto = document.getElementById("texto");
 
-    botao.addEventListener("click", () => {
-      texto.style.display = "block"
-    })
+botao.addEventListener("click", function() {
+  texto.style.display = "block";
+});
 
-  </script>
+</script>
 
+</body>
 </html>
